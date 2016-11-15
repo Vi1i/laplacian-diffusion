@@ -300,9 +300,8 @@ class LapDiff {
                 }
                 out << std::endl;
                 for(auto step = 0; step < steps; step++) {
-                    if(step != 0) {
-                        out << "--Step" << step << std::endl;
-                    }
+                    //out << "--Step" << step << ',';
+                    //out << step << ',';
                     for(auto x = 0; x < LapDiff::Dimensions[0]; x++) {
                         if(x != 0) {
                             out << ",";
